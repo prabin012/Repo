@@ -30,7 +30,7 @@ const DashboardLayout = () => {
     {
       id: 3,
       title: "Achievements",
-      path: "/dashboard/profile",
+      path: "/dashboard/achivments",
     },
   ];
   return (
