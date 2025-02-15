@@ -1,6 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Navbar from "../pages/navbar";
 import DashboardLayout from "../layout/Dashboard";
+import Landing from "../components/Landing";
 
 const HomeRoute = () => {
   return (
@@ -8,7 +9,7 @@ const HomeRoute = () => {
       <BrowserRouter>
         <Navbar />
         <Routes>
-          <Route path="/" element={"Home"} />
+          <Route path="/" element={<Landing />} />
           <Route path="/blogs" element={"blogs"} />
           <Route path="/about" element={"about"} />
           <Route path="/dashboard/profile" element={<DashboardLayout />} />
